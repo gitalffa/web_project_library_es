@@ -1,0 +1,164 @@
+.page {
+  max-width: 1600px;
+  min-width: 1100px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
+  padding: 30px 80px 40px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.nav {
+  /* Agrega las propiedades flex aquí */
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  width: 58px;
+  height: 80px;
+}
+
+.nav__links {
+  /* Restablece los estilos predeterminados de list aquí */
+  margin: 8px 0 0;
+  display: flex;
+  column-gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav__link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header__content {
+  /* Agrega las propiedades flex aquí */
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__title {
+  font-size: 3.875rem; /* 62px → 3.875rem */
+  line-height: 4.75rem; /* 76px → 4.75rem */
+  font-weight: 500;
+  max-width: 635px;
+  margin-top: 128px;
+}
+
+.header__description {
+  font-size: 1.25rem; /* 20px → 1.25rem */
+  line-height: 1.875rem; /* 30px → 1.875rem */
+  margin-top: 32px;
+  max-width: 515px;
+}
+
+.header__image {
+  max-width: 636px;
+}
+
+.header__footer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__address {
+  margin: 0;
+  color: #838383;
+}
+
+.staff {
+  background-image: url("../images/staff_picks_background.jpg");
+  padding: 100px 0 140px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.staff__title {
+  text-align: center;
+  font-size: 2.75rem; /* 44px → 2.75rem */
+  line-height: 3.25rem; /* 52px → 3.25rem */
+  font-weight: 400;
+  margin: 0 0 24px;
+  color: #ffffff;
+}
+
+.staff__subtitle {
+  text-align: center;
+  font-size: 1.25rem; /* 20px → 1.25rem */
+  line-height: 1.875rem; /* 30px → 1.875rem */
+  font-weight: 400;
+  margin: 0 0 68px;
+  color: #ffffff;
+}
+
+/* Agrega la regla CSS para tu nueva clase aquí. Asegúrate de colocarlo antes de .card:, los padres deben preceder a sus hijos */
+
+.staff__cards {
+  max-width: 80vw; /* En lugar de 760px, más adaptable */
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra las tarjetas si hay menos de 3 */
+  gap: 5vw; /* Mejor separación en pantallas grandes */
+  padding-left: 0;
+}
+.card {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 32px 40px 20px 32px;
+  box-sizing: border-box;
+  width: 30%; /* En lugar de 360px */
+  height: auto; /* Para que crezca según el contenido */
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.card__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card__text {
+  margin: 20px 0 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card__footer {
+  margin: 0;
+  margin-top: auto;
+  font-size: 14px;
+  line-height: 20px;
+  color: #838383;
+}
