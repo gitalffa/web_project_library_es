@@ -51,16 +51,16 @@
 }
 
 .header__title {
-  font-size: 3.875rem; /* 62px → 3.875rem */
-  line-height: 4.75rem; /* 76px → 4.75rem */
+  font-size: 62px; /* 62px → 3.875rem */
+  line-height: 76px; /* 76px → 4.75rem */
   font-weight: 500;
   max-width: 635px;
   margin-top: 128px;
 }
 
 .header__description {
-  font-size: 1.25rem; /* 20px → 1.25rem */
-  line-height: 1.875rem; /* 30px → 1.875rem */
+  font-size: 20px; /* 20px → 1.25rem */
+  line-height: 30px; /* 30px → 1.875rem */
   margin-top: 32px;
   max-width: 515px;
 }
@@ -97,8 +97,8 @@
 
 .staff__title {
   text-align: center;
-  font-size: 2.75rem; /* 44px → 2.75rem */
-  line-height: 3.25rem; /* 52px → 3.25rem */
+  font-size: 44px; /* 44px → 2.75rem */
+  line-height: 52px; /* 52px → 3.25rem */
   font-weight: 400;
   margin: 0 0 24px;
   color: #ffffff;
@@ -106,32 +106,32 @@
 
 .staff__subtitle {
   text-align: center;
-  font-size: 1.25rem; /* 20px → 1.25rem */
-  line-height: 1.875rem; /* 30px → 1.875rem */
+  font-size: 20px; /* 20px → 1.25rem */
+  line-height: 30px; /* 30px → 1.875rem */
   font-weight: 400;
-  margin: 0 0 68px;
+  margin: 0 0 68px 0;
   color: #ffffff;
 }
 
 /* Agrega la regla CSS para tu nueva clase aquí. Asegúrate de colocarlo antes de .card:, los padres deben preceder a sus hijos */
 
 .staff__cards {
-  max-width: 80vw; /* En lugar de 760px, más adaptable */
-  margin: auto;
+  max-width: 760px; /* En lugar de 760px, más adaptable */
+  margin: 68px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Centra las tarjetas si hay menos de 3 */
-  gap: 5vw; /* Mejor separación en pantallas grandes */
+  gap: 40px; /* Mejor separación en pantallas grandes */
   padding-left: 0;
+  list-style-type: none;
 }
 .card {
   background-color: #fff;
   border-radius: 6px;
   padding: 32px 40px 20px 32px;
   box-sizing: border-box;
-  width: 30%; /* En lugar de 360px */
-  height: auto; /* Para que crezca según el contenido */
-  list-style-type: none;
+  width: 360px; /* En lugar de 360px */
+  height: 420px; /* Para que crezca según el contenido */
   overflow: hidden;
 }
 
