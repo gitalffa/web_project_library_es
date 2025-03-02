@@ -19,7 +19,6 @@
 }
 
 .nav {
-  /* Agrega las propiedades flex aquí */
   display: flex;
   justify-content: space-between;
 }
@@ -30,7 +29,6 @@
 }
 
 .nav__links {
-  /* Restablece los estilos predeterminados de list aquí */
   margin: 8px 0 0;
   display: flex;
   column-gap: 20px;
@@ -45,7 +43,6 @@
 }
 
 .header__content {
-  /* Agrega las propiedades flex aquí */
   display: flex;
   justify-content: space-between;
 }
@@ -112,8 +109,6 @@
   margin: 0;
   color: #ffffff;
 }
-
-/* Agrega la regla CSS para tu nueva clase aquí. Asegúrate de colocarlo antes de .card:, los padres deben preceder a sus hijos */
 
 .staff__cards {
   max-width: 760px; /* En lugar de 760px, más adaptable */
@@ -245,32 +240,26 @@
 }
 
 .person_name_feynman {
-  /* Utiliza los valores correctos de las propiedades top/right/bottom/left para posicionar el elemento */
-
   top: -30px;
   left: 319px;
 }
 
 .person_name_burbidge {
-  /* Utiliza los valores correctos de las propiedades top/right/bottom/left para posicionar el elemento */
   top: 96px;
   right: 125px;
 }
 
 .person_name_cannon {
-  /* Utiliza los valores correctos de las propiedades top/right/bottom/left para posicionar el elemento */
   bottom: 18px;
   right: 216px;
 }
 
 .person_name_mitchell {
-  /* Utiliza los valores correctos de las propiedades top/right/bottom/left para posicionar el elemento */
   bottom: 82px;
   left: 142px;
 }
 
 .person_name_tarter {
-  /* Utiliza los valores correctos de las propiedades top/right/bottom/left para posicionar el elemento */
   top: 79px;
   left: 159px;
 }
@@ -315,7 +304,6 @@
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
-  /* Agrega estilos */
 
   display: flex;
   justify-content: center;
@@ -323,8 +311,6 @@
 }
 
 .step {
-  /* Agrega estilos */
-
   flex-basis: 220px;
 }
 
@@ -347,21 +333,37 @@
 
 .footer {
   box-sizing: border-box;
+  background-color: #1f1f1f;
+  color: white;
 }
 
 .footer__columns {
+  display: flex;
+  justify-content: flex-end;
+  padding: 60px;
+  gap: 80px; /* Espacio entre las dos últimas columnas */
+}
+.footer__column:nth-child(1) {
+  margin-right: auto;
 }
 
 .footer__column_content_hours {
+  font-size: 14px;
 }
 
 .footer__column_content_social {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__logo {
+  width: 58px;
+  height: 80px;
 }
 
 .footer__column-heading {
+  margin: 0 0 20px 0;
+  font-size: 14px;
 }
 
 .footer__list {
@@ -372,15 +374,26 @@
 }
 
 .footer__list-item {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0 0 16px 0;
 }
 
 .footer__column-link {
   color: white;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }
 
 .footer__copyright {
+  padding: 0 0 60px 80px;
+  font-size: small;
+  margin: 0;
 }
