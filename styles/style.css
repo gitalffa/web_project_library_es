@@ -335,12 +335,12 @@
   box-sizing: border-box;
   background-color: #1f1f1f;
   color: white;
+  padding: 60px 80px;
 }
 
 .footer__columns {
   display: flex;
   justify-content: flex-end;
-  padding: 60px;
   gap: 80px; /* Espacio entre las dos últimas columnas */
 }
 .footer__column:nth-child(1) {
@@ -393,7 +393,6 @@
 }
 
 .footer__copyright {
-  padding: 0 0 60px 80px;
+  margin-top: 100px;
   font-size: small;
-  margin: 0;
 }
