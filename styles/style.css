@@ -349,6 +349,7 @@
 
 .footer__column_content_hours {
   font-size: 14px;
+  margin-left: auto;
 }
 
 .footer__column_content_social {
